@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -16,6 +17,7 @@ public class Drag : MonoBehaviour
         {
             transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
         }
+      
     }
     private void OnMouseDown()
     {
@@ -26,4 +28,6 @@ public class Drag : MonoBehaviour
     {
         dragging = false;
     }
+
+    
 }
